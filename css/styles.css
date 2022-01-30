@@ -1,0 +1,12 @@
+@import url("./global.css");
+@import url("./home.css");
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Zen Kurenaido';
+    src: url('../fonts/ZenKurenaido-Regular.ttf');
+}

@@ -1,0 +1,25 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Zen Kurenaido', sans-serif;
+}
+
+ul,
+li,
+h1,
+h2,
+h3,
+p,
+span {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style: none;
+}
