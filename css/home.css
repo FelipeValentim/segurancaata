@@ -2,6 +2,10 @@
     --facebook: #3A559F;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 img,
 .svg {
     max-width: 100px;
@@ -16,14 +20,23 @@ img,
 .menu {
     max-width: 1200px;
     margin: 0 auto;
+
 }
 
 .menu ul {
-    display: flex;
+    display:flex;
     flex-wrap: wrap;
-    padding: 30px;
-    gap: 30px;
     justify-content: center;
+    padding: 30px 0;
+    gap: 30px;
+    max-width: 600px; 
+    margin: 0 auto;
+}
+
+.menu li {
+    flex: 1;
+    text-align: center; 
+
 }
 
 .menu li a {
@@ -265,7 +278,7 @@ img,
         border-top: outset;
         padding-top: 30px;
 
-        
+
     }
 
     .clientes ul {
