@@ -24,18 +24,18 @@ img,
 }
 
 .menu ul {
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding: 30px 0;
     gap: 30px;
-    max-width: 600px; 
+    max-width: 600px;
     margin: 0 auto;
 }
 
 .menu li {
     flex: 1;
-    text-align: center; 
+    text-align: center;
 
 }
 
@@ -219,6 +219,11 @@ img,
 .contato .facebook a:hover {
     cursor: pointer;
     --facebook: #17395D;
+}
+
+.contato .ata {
+    color: #E1802E;
+
 }
 
 /* CONTATO */
