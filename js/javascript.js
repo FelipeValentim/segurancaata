@@ -1,6 +1,6 @@
 const sections = document.querySelectorAll('.js-scroll');
 if (sections.length) {
-    const halfWindow = window.innerHeight * 0.90;
+    const halfWindow = window.innerHeight * 0.85;
 
     function scrollAnim() {
         sections.forEach((section) => {
