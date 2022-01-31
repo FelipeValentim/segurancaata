@@ -4,9 +4,11 @@
 @font-face {
     font-family: 'Poppins';
     src: url('../fonts/Poppins-Regular.ttf');
+    font-display: swap;
 }
 
-@font-face {
+/* @font-face {
     font-family: 'Zen Kurenaido';
     src: url('../fonts/ZenKurenaido-Regular.ttf');
-}
+    font-display: swap;
+} */
