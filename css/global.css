@@ -69,4 +69,12 @@ li {
     display: initial;
 }
 
+.menu .ativo {
+    color: var(--primary-color);
+}
+
+.titulo-laranja {
+    color: var(--primary-color);
+}
+
 /* MENU-HEADER */

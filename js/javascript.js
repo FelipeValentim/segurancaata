@@ -33,6 +33,12 @@ const mains = document.querySelectorAll('.js-menu');
 
 function changeMain(event) {
     event.preventDefault();
+
+    headerButton.forEach((button) => {
+        button.classList.remove('ativo');
+    });
+    this.classList.add('ativo');
+
     const href = event.currentTarget.getAttribute('href');
     const main = document.querySelector(href);
     mains.forEach((main) => {
@@ -40,9 +46,11 @@ function changeMain(event) {
     });
     // console.log(main);
     main.classList.add('js-menu-ativo');
+
+
 }
 
-document.querySelector("#main-home").classList.add('js-menu-ativo');
+document.querySelector("#main-contact").classList.add('js-menu-ativo');
 
 headerButton.forEach((button) => {
     button.addEventListener('click', changeMain);

@@ -28,10 +28,6 @@
     text-align: center;
 }
 
-.titulos h1 span {
-    color: var(--primary-color);
-}
-
 .titulos h2 {
     color: var(--less-important-color);
     letter-spacing: 0.085rem;
