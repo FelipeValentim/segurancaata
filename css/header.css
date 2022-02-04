@@ -1,0 +1,41 @@
+/* HEADER */
+.header {
+    /* background-color: #28201a; */
+    background: var(--bg-color-header);
+}
+
+.menu {
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px 0;
+    gap: 30px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.menu li {
+    flex: 1;
+    text-align: center;
+
+}
+
+.menu li a {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    transition: .2s;
+}
+
+.menu li a:hover {
+    color: var(--primary-color);
+}
+
+/* HEADER */

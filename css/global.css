@@ -1,7 +1,28 @@
+:root {
+    --facebook: #3A559F;
+    --primary-color: #E1802E;
+    --secondary-color: #fefff8;
+    --less-important-color: #797878;
+    --bg-color-footer: #EAB333;
+    --bg-color-header: #39393b;
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+img,
+.svg {
+    max-width: 100px;
+}
+
 body {
     padding: 0;
     margin: 0;
     font-family: 'Zen Kurenaido', sans-serif;
+    background-color: #fdfdfd;
 }
 
 ul,
@@ -23,3 +44,29 @@ a {
 li {
     list-style: none;
 }
+
+/* SCROLL */
+.js .js-scroll {
+    opacity: 0;
+    transform: translate3d(-40px, 0, 0);
+    transition: .3s;
+}
+
+.js .js-scroll.ativo {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+
+}
+
+/* SCROLL */
+
+/* MENU-HEADER */
+.js .js-menu {
+    display: none;
+}
+
+.js .js-menu.js-menu-ativo {
+    display: initial;
+}
+
+/* MENU-HEADER */

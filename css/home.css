@@ -1,72 +1,17 @@
-:root {
-    --facebook: #3A559F;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-img,
-.svg {
-    max-width: 100px;
-}
-
-/* HEADER */
-.header {
-    /* background-color: #28201a; */
-    background: #39393b;
-}
-
-.menu {
-    max-width: 1200px;
-    margin: 0 auto;
-
-}
-
-.menu ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 30px 0;
-    gap: 30px;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.menu li {
-    flex: 1;
-    text-align: center;
-
-}
-
-.menu li a {
-    font-size: 1.5rem;
-    padding: 10px 20px;
-    text-transform: uppercase;
-    color: #fefff8;
-    transition: .2s;
-}
-
-.menu li a:hover {
-    color: #E1802E;
-}
-
-/* HEADER */
-
-/* MAIN */
+/* --- MAIN-MENU --- */
 /* LOGO */
-.main {
+.main-home {
     max-width: 1200px;
     margin: 0 auto;
-    display: grid;
+    /* display: grid; */
 }
 
-.main .logo {
+.main-home .logo {
     margin-top: 30px;
     text-align: center;
 }
 
-.main .logo img {
+.main-home .logo img {
     max-width: 100%;
 }
 
@@ -78,16 +23,17 @@ img,
     text-align: center;
 }
 
-.titulos h1 {
+.titulo-main {
     font-size: 3rem;
+    text-align: center;
 }
 
 .titulos h1 span {
-    color: #E1802E;
+    color: var(--primary-color);
 }
 
 .titulos h2 {
-    color: #797878;
+    color: var(--less-important-color);
     letter-spacing: 0.085rem;
     font-size: 1.3rem;
 }
@@ -101,8 +47,10 @@ img,
     padding: 40px 20px;
     font-size: 3rem;
     letter-spacing: 0.085rem;
-    border-bottom: solid 2px #E1802E;
-    justify-self: center;
+    border-bottom: solid 2px var(--primary-color);
+    /* justify-self: center; */
+    display: inline-block;
+    /* text-align: center; */
     margin-bottom: 20px;
 }
 
@@ -138,7 +86,7 @@ img,
     text-align: center;
     padding: 20px;
     font-size: 1.5rem;
-    color: #E1802E;
+    color: (--primary-color);
 }
 
 .servico+.servico {
@@ -203,7 +151,7 @@ img,
 }
 
 .contato p a:hover {
-    color: #E1802E;
+    color: var(--primary-color);
 }
 
 .contato .facebook {
@@ -222,7 +170,7 @@ img,
 }
 
 .contato .ata {
-    color: #E1802E;
+    color: var(--primary-color);
 
 }
 
@@ -231,22 +179,7 @@ img,
 
 /* MAIN */
 
-/* FOOTER */
-.footer {
-    margin-top: 40px;
-    background: #EAB333;
-    padding: 40px;
-}
 
-.footer p {
-    font-family: 'Poppins';
-    /* font-weight: bold; */
-    color: #261617;
-    text-align: center;
-    font-size: 1rem;
-}
-
-/* FOOTER */
 
 /* MEDIA QUERY */
 @media (max-width: 1100px) {
@@ -308,6 +241,7 @@ img,
 
     .titulos h1 {
         font-size: 2.5rem;
+        padding: 5px 20px;
     }
 
     .titulos h2 {
@@ -332,16 +266,7 @@ img,
 }
 
 /* MEDIA QUERY */
+/* --- MAIN-MENU --- */
 
 
-.js .js-scroll {
-    opacity: 0;
-    transform: translate3d(-40px, 0, 0);
-    transition: .3s;
-}
 
-.js .js-scroll.ativo {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-
-}

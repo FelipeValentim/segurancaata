@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
 
 </head>
 
@@ -23,51 +23,97 @@
     <header class="header">
         <nav class="menu">
             <ul>
-                <li><a href="#">home</a></li>
-                <li><a href="#">serviços</a></li>
-                <li><a href="#">contato</a></li>
+                <!-- <li><a href="#main-home">home</a></li>
+                <li><a href="#main-service">serviços</a></li>
+                <li><a href="#">contato</a></li> -->
+                <li><a href="#main-home">home</a></li>
+                <li><a href="#main-service">serviços</a></li>
+                <li><a href="#main-contact">contato</a></li>
             </ul>
         </nav>
     </header>
-    <main class="main">
-        <div class="logo js-scroll">
-            <img src="./img/logo.png" alt="logo" width="150px" height="171px">
-        </div>
 
-        <div class="titulos js-scroll">
-            <h1>SUA SEGURANÇA É <span>NOSSA PRIORIDADE</span></h1>
-            <h2>Uma equipe 24h à sua disposição zelando por você</h2>
-        </div>
-        <h1 class="titulo js-scroll">Serviços</h1>
-        <section class="servicos">
-            <ul>
-                <li class="servico js-scroll">
-                    <img class="imagem-servico" src="./img/security-camera-svgrepo-com.svg" alt="camera">
-                    <h2 class="titulo-servico">Segurança Eletrônica</h2>
-                    <p class="descricao-servico">A ATA Segurança planeja e executa projetos integrados de segurança eletrônica, agregando os mais modernos produtos e tecnologias disponíveis no mercado.</p>
-                </li>
-                <li class="servico js-scroll">
-                    <img class="imagem-servico" src="./img/siren-svgrepo-com.svg" alt="sirene">
-                    <h2 class="titulo-servico">Segurança Patrimonial</h2>
-                    <p class="descricao-servico">Somos capacitados e regulamentados para prestar serviços de segurança patrimonial com soluções de segurança que uma empresa, uma instituição ou uma pessoa possam necessitar.</p>
-                </li>
-                <li class="servico js-scroll">
-                    <img class="imagem-servico" src="./img/laptop-svgrepo-com.svg" alt="computador">
-                    <h2 class="titulo-servico">Controle de acesso</h2>
-                    <p class="descricao-servico">Controle de acesso, também encarregado de portaria, é a designação da profissão onde o trabalhador deve ficar na entrada de um estabelecimento para proteger a entrada indevida de estranhos.</p>
-                </li>
-            </ul>
-        </section>
-        <h1 class="titulo js-scroll">Nossos clientes</h1>
-        <section class="clientes">
-            <ul>
-                <li class="cliente js-scroll"><img src="./img/REM-Logo.png" alt="REM Construtora e Incorporadora" width="1954px"></li>
-                <li class="cliente js-scroll"><img src="./img/logo-site-white.jpg" alt="WDS Construtora" width="150px"></li>
-                <li class="cliente js-scroll"><img src="./img/PAULO.png" alt="Paulo Mauro Construtora" width="240px"></li>
-                <li class="cliente js-scroll"><img src="./img/tefé.jpg" alt="Amigos da Tefé" width="140px"></li>
-            </ul>
-        </section>
+    <main class="js-menu" id="main-home">
+        <article class="main-home">
+            <div class="logo js-scroll">
+                <img src="./img/logo.png" alt="logo" width="150px" height="171px">
+            </div>
+
+            <div class="titulos js-scroll">
+                <h1 class="titulo-main">SUA SEGURANÇA É <span>NOSSA PRIORIDADE</span></h1>
+                <h2>Uma equipe 24h à sua disposição zelando por você</h2>
+            </div>
+            <div class="titulo-servico">
+                <h1 class="titulo js-scroll">Serviços</h1>
+            </div>
+
+            <section class="servicos">
+                <ul>
+                    <li class="servico js-scroll">
+                        <img class="imagem-servico" src="./img/security-camera-svgrepo-com.svg" alt="camera">
+                        <h2 class="titulo-servico">Segurança Eletrônica</h2>
+                        <p class="descricao-servico">A ATA Segurança planeja e executa projetos integrados de segurança eletrônica, agregando os mais modernos produtos e tecnologias disponíveis no mercado.</p>
+                    </li>
+                    <li class="servico js-scroll">
+                        <img class="imagem-servico" src="./img/siren-svgrepo-com.svg" alt="sirene">
+                        <h2 class="titulo-servico">Segurança Patrimonial</h2>
+                        <p class="descricao-servico">Somos capacitados e regulamentados para prestar serviços de segurança patrimonial com soluções de segurança que uma empresa, uma instituição ou uma pessoa possam necessitar.</p>
+                    </li>
+                    <li class="servico js-scroll">
+                        <img class="imagem-servico" src="./img/laptop-svgrepo-com.svg" alt="computador">
+                        <h2 class="titulo-servico">Controle de acesso</h2>
+                        <p class="descricao-servico">Controle de acesso, também encarregado de portaria, é a designação da profissão onde o trabalhador deve ficar na entrada de um estabelecimento para proteger a entrada indevida de estranhos.</p>
+                    </li>
+                </ul>
+            </section>
+            <div class="titulo-servico">
+                <h1 class="titulo js-scroll">Nossos clientes</h1>
+            </div>
+            <section class="clientes">
+                <ul>
+                    <li class="cliente js-scroll"><img src="./img/REM-Logo.png" alt="REM Construtora e Incorporadora" width="1954px"></li>
+                    <li class="cliente js-scroll"><img src="./img/logo-site-white.jpg" alt="WDS Construtora" width="150px"></li>
+                    <li class="cliente js-scroll"><img src="./img/PAULO.png" alt="Paulo Mauro Construtora" width="240px"></li>
+                    <li class="cliente js-scroll"><img src="./img/tefé.jpg" alt="Amigos da Tefé" width="140px"></li>
+                </ul>
+            </section>
+        </article>
     </main>
+
+    <main class="js-menu" id="main-service">
+        <article class="main-service">
+            <div>
+                <h1 class=" titulo-main">ZELANDO PELA SUA SEGURANÇA</h1>
+                <p>A ATA Segurança é uma opção segura para a terceirização de serviços. <br>Além disso, realizamos diagnósticos e planos de melhorias sociais nas comunidades do entorno de seus clientes.</p>
+            </div>
+            <section class="info">
+                <img class="imagem-info" src="./img/cam.jpg" alt="Câmera">
+                <div class="conteudo">
+                    <h2>SEGURANÇA</h2>
+                    <p>Planejamos e executamos projetos customizados e integrados de segurança para nossos clientes. Integramos recursos humanos com o que existe de mais moderno em segurança eletrônica, diagnosticamos as vulnerabilidades e atuamos na melhoria social do entorno, oferecendo uma solução completa e eficiente de segurança.</p>
+                </div>
+
+                <img class="imagem-info" src="./img/terceirizado.jpg" alt="Terceirizado">
+                <div class="conteudo">
+                    <h2>SERVIÇOS TERCEIRIZADOS</h2>
+                    <p>Somos especialistas na prestação de serviços terceirizados de apoio ao seu negócio, tais como portaria, recepção, limpeza, copa e manutenção. Assim, nossos clientes podem focar suas energias em seu negócio principal, garantindo maior eficiência e qualidade nos serviços de apoio.</p>
+                </div>
+
+                <img class="imagem-info" src="./img/cabin.jpg" alt="Cabine">
+                <div class="conteudo">
+                    <h2>FACILITIES</h2>
+                    <p>Oferecemos atividades integradas de suporte e de infraestrutura, atuando como um elo importante para a dinâmica organizacional, na busca da melhor eficiência possível para os serviços de apoio a indústrias, condomínios residenciais e comerciais, comércios, órgãos de administração pública e bancos.</p>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <main id="js-menu" id="main-contact">
+        <article class="main-contact">
+            
+        </article>
+    </main>
+
     <section class="contato js-scroll">
         <h2 class="subtitulo">ENTRE EM CONTATO</h2>
         <div class="imagem-telefone js-scroll">

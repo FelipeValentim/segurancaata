@@ -1,0 +1,16 @@
+/* FOOTER */
+.footer {
+    margin-top: 40px;
+    background: var(--bg-color-footer);
+    padding: 40px;
+}
+
+.footer p {
+    font-family: 'Poppins';
+    /* font-weight: bold; */
+    color: #261617;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* FOOTER */

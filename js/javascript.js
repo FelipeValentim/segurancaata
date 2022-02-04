@@ -26,4 +26,30 @@ function scrollAnimInit() {
     };
 }
 
-scrollAnimInit()
+scrollAnimInit();
+
+const headerButton = document.querySelectorAll(".menu a[href^='#']");
+const mains = document.querySelectorAll('.js-menu');
+
+function changeMain(event) {
+    event.preventDefault();
+    const href = event.currentTarget.getAttribute('href');
+    const main = document.querySelector(href);
+    mains.forEach((main) => {
+        main.classList.remove('js-menu-ativo');
+    });
+    // console.log(main);
+    main.classList.add('js-menu-ativo');
+}
+
+document.querySelector("#main-home").classList.add('js-menu-ativo');
+
+headerButton.forEach((button) => {
+    button.addEventListener('click', changeMain);
+});
+
+
+
+
+// // console.log(button.getBoundingClientRect().x);
+// console.log('');
