@@ -49,21 +49,26 @@ function showTabInit() {
             main.classList.remove('js-menu-ativo');
         });
 
-        if (ativo < antigo) { // Checa se o botão clicado está a direita ou a esquerda do ativo
-            main.classList.add('js-menu-ativo');
-            main.style.animation = 'showLeft 0.5s'; // Adiciona a animação para a esquerda
+        if (window.innerWidth > 600) {
+            if (ativo < antigo) { // Checa se o botão clicado está a direita ou a esquerda do ativo
+                main.classList.add('js-menu-ativo');
+                main.style.animation = 'showLeft 0.5s'; // Adiciona a animação para a esquerda
 
-        } else if (ativo > antigo) {
-            main.classList.add('js-menu-ativo');
-            main.style.animation = 'showRight 0.5s'; // Adiciona a animação a direita
+            } else if (ativo > antigo) {
+                main.classList.add('js-menu-ativo');
+                main.style.animation = 'showRight 0.5s'; // Adiciona a animação a direita
 
+            } else {
+                main.classList.add('js-menu-ativo'); // Não faz a animação caso tenha clicado no mesmo botão
+            }
         } else {
-            main.classList.add('js-menu-ativo'); // Não faz a animação caso tenha clicado no mesmo botão
+            main.classList.add('js-menu-ativo');
         }
+
     }
 
     document.querySelector("#main-contact").classList.add('js-menu-ativo');
-    document.querySelector("a[href='#main-contact']").classList.add('activeTab');
+    document.querySelector("a[href='#main-home']").classList.add('activeTab');
 
 
     headerButton.forEach((button) => {
@@ -74,12 +79,14 @@ showTabInit();
 
 function menuHamburguerInit() {
     const btnMobile = document.querySelector('.btn-mobile');
+    const hamburguerButton = document.querySelectorAll(".menu a[href^='#']");
+    const nav = document.querySelector('.nav');
+
 
     function toggleMenu(event) {
         if (event.type === 'touchstart') {
             event.preventDefault();
         }
-        const nav = document.querySelector('.nav');
         nav.classList.toggle('activeMobileNav');
 
         const ariaExpanded = nav.classList.contains('activeMobileNav');
@@ -94,6 +101,15 @@ function menuHamburguerInit() {
 
     btnMobile.addEventListener('click', toggleMenu);
     btnMobile.addEventListener('touchstart', toggleMenu);
+
+    function shrinkMenu() {
+        nav.classList.remove('activeMobileNav');
+    }
+
+    hamburguerButton.forEach((button) => {
+        button.addEventListener('click', shrinkMenu);
+    });
+
 }
 
 menuHamburguerInit();
