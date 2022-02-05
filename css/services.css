@@ -57,7 +57,7 @@
     }
 }
 
-@media (max-width: 660px) {
+@media (max-width: 800px) {
     .main-service .info img:nth-of-type(even) {
         grid-column: 1;
     }
@@ -66,14 +66,20 @@
         grid-template-columns: 1fr;
         gap: 10px;
         margin: 20px;
+        justify-items: center;
     }
 
     .imagem-info {
         margin-top: 60px;
+
     }
 
     .main-service .info h2 {
         font-size: 1.7rem;
+    }
+
+    .main-service .info p {
+        max-width: 60ch;
     }
 }
 

@@ -1,6 +1,6 @@
 .main-info {
     background-image: url("../img/guarda.jfif");
-    /* background-size: cover; */
+    background-size: cover;
     padding: 60px;
     background-position: center;
 }
@@ -8,21 +8,23 @@
 .main-info .info h1 {
     font-size: 3rem;
     text-align: center;
-    color: #fff;
+    color: #ffffff;
     padding: 100px 0px 30px 0px;
 }
 
 .main-info .info p {
     font-size: 1.5rem;
-    color: white;
+    max-width: 60ch;
+    /* max-width: 1000px; */
+    color: #ffffff;
     text-align: center;
     font-family: "Poppins";
-    max-width: 60ch;
     margin: 0 auto;
     margin-bottom: 90px;
 }
 
 .about {
+    /* max-width: 1200px; */
     max-width: 900px;
     margin: 0 auto;
 }
@@ -41,12 +43,84 @@
 
 
 .about>p {
-    padding: 20px 10px;
+    padding: 30px 10px;
     font-family: "Poppins";
     /* text-align: center; */
     /* max-width: 60ch; */
     margin: 0 auto;
 }
+
+.about>p strong {
+    color: var(--primary-color);
+}
+
+.formulario-bg {
+    background: #434343;
+}
+
+.formulario-main {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 20px 10px;
+}
+
+.formulario-main .form-info {
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+.formulario-main .form-info p {
+    font-size: 0.9rem;
+    font-family: "Poppins";
+    margin-top: 15px;
+
+}
+
+
+.formulario {
+    padding-bottom: 20px;
+}
+
+
+.formulario input {
+    margin-top: 15px;
+    display: block;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    width: 100%;
+    font-family: "Poppins";
+}
+
+.formulario textarea {
+    margin-top: 15px;
+    width: 100%;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-family: "Poppins";
+
+}
+
+.formulario .button {
+    text-align: end;
+}
+
+.formulario button {
+    border: none;
+    padding: 15px 80px;
+    font-size: 1.2rem;
+    background: #eab333;
+    border-radius: 2rem;
+}
+
+
+
+
 
 @media (max-width: 1150px) {
     .main-info .info h1 {
@@ -64,8 +138,6 @@
 }
 
 @media (max-width: 575px) {
-
-
     .main-info .info h1 {
         font-size: 2rem;
         padding-bottom: 20px;
@@ -75,6 +147,15 @@
     .main-info .info p {
         font-size: 1.1rem;
         margin-bottom: 0px;
+    }
+
+    .formulario-main {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .formulario .button {
+        text-align: start;
     }
 }
 

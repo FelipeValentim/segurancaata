@@ -28,47 +28,72 @@ function scrollAnimInit() {
 
 scrollAnimInit();
 
-const headerButton = document.querySelectorAll(".menu a[href^='#']");
-const mains = document.querySelectorAll('.js-menu');
+function showTabInit() {
+    const headerButton = document.querySelectorAll(".menu a[href^='#']");
+    const mains = document.querySelectorAll('.js-menu');
 
-function changeMain(event) {
-    event.preventDefault();
-    const ativo = document.querySelector('.ativo').getBoundingClientRect().x;
+    function changeMain(event) {
+        event.preventDefault();
+        const antigo = document.querySelector('.activeTab').getBoundingClientRect().x;
+
+        headerButton.forEach((button) => {
+            button.classList.remove('activeTab');
+        });
+        this.classList.add('activeTab');
+        const ativo = document.querySelector('.activeTab').getBoundingClientRect().x;
+
+        const href = event.currentTarget.getAttribute('href');
+        const main = document.querySelector(href);
+
+        mains.forEach((main) => {
+            main.classList.remove('js-menu-ativo');
+        });
+
+        if (ativo < antigo) { // Checa se o botão clicado está a direita ou a esquerda do ativo
+            main.classList.add('js-menu-ativo');
+            main.style.animation = 'showLeft 0.5s'; // Adiciona a animação para a esquerda
+
+        } else if (ativo > antigo) {
+            main.classList.add('js-menu-ativo');
+            main.style.animation = 'showRight 0.5s'; // Adiciona a animação a direita
+
+        } else {
+            main.classList.add('js-menu-ativo'); // Não faz a animação caso tenha clicado no mesmo botão
+        }
+    }
+
+    document.querySelector("#main-contact").classList.add('js-menu-ativo');
+    document.querySelector("a[href='#main-contact']").classList.add('activeTab');
+
+
     headerButton.forEach((button) => {
-        button.classList.remove('ativo');
+        button.addEventListener('click', changeMain);
     });
-    this.classList.add('ativo');
+}
+showTabInit();
 
-    const href = event.currentTarget.getAttribute('href');
-    const main = document.querySelector(href);
-    mains.forEach((main) => {
-        // main.classList.remove('js-menu-ativo-direita');
-        // main.classList.remove('js-menu-ativo-esquerda');
-        main.classList.remove('js-menu-ativo');
+function menuHamburguerInit() {
+    const btnMobile = document.querySelector('.btn-mobile');
 
-    });
-    console.log(this.getBoundingClientRect().x, ativo);
-    main.classList.add('js-menu-ativo');
-    // if (this.getBoundingClientRect().x > document.querySelector('.ativo').getBoundingClientRect().x) {
-    //     main.classList.add('js-menu-ativo-esquerda');
-    // } else {
-    //     main.classList.add('js-menu-ativo-direita');
-    // }
+    function toggleMenu(event) {
+        if (event.type === 'touchstart') {
+            event.preventDefault();
+        }
+        const nav = document.querySelector('.nav');
+        nav.classList.toggle('activeMobileNav');
 
+        const ariaExpanded = nav.classList.contains('activeMobileNav');
+        this.setAttribute('aria-expanded', ariaExpanded);
+        if (ariaExpanded) {
+            this.setAttribute('aria-label', 'Fechar menu')
+        } else {
+            this.setAttribute('aria-label', 'Abrir menu')
+        }
 
+    }
 
+    btnMobile.addEventListener('click', toggleMenu);
+    btnMobile.addEventListener('touchstart', toggleMenu);
 }
 
-document.querySelector("#main-contact").classList.add('js-menu-ativo');
-document.querySelector("a[href='#main-contact']").classList.add('ativo');
-
-
-headerButton.forEach((button) => {
-    button.addEventListener('click', changeMain);
-});
-
-
-
-
-// // console.log(button.getBoundingClientRect().x);
-// console.log('');
+menuHamburguerInit();

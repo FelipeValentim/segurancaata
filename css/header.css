@@ -2,15 +2,20 @@
 .header {
     /* background-color: #28201a; */
     background: var(--bg-color-header);
+
 }
 
-.menu {
+.button {
+    display: none;
+}
+
+.nav {
     max-width: 1200px;
     margin: 0 auto;
 
 }
 
-.menu ul {
+.menu {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -23,7 +28,6 @@
 .menu li {
     flex: 1;
     text-align: center;
-
 }
 
 .menu li a {
@@ -36,6 +40,98 @@
 
 .menu li a:hover {
     color: var(--primary-color);
+}
+
+@media (max-width: 600px) {
+    .menu li {
+        text-align: start;
+    }
+
+    .menu li a {
+        font-size: 1.2rem;
+        display: block;
+        padding: 20px 10px;
+        margin: 0 15px;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .menu li a:hover {
+        background-color: #616161;
+    }
+
+    .nav {
+        text-align: end;
+        max-width: 100%;
+        height: 60px;
+    }
+
+    .button {
+        display: block;
+        /* text-align: end; */
+        padding: 20px;
+        border: none;
+        background: none;
+    }
+
+    .btn-mobile {
+        /* padding: 10px; */
+        display: block;
+        border-top: 2px solid;
+        width: 20px;
+        cursor: pointer;
+    }
+
+    .btn-mobile::after,
+    .btn-mobile::before {
+        content: '';
+        display: block;
+
+        width: 20px;
+        height: 2px;
+        /* margin-left: -6px; */
+        background-color: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+
+    }
+
+    .menu {
+        display: block;
+        position: absolute;
+        padding: 0px;
+        width: 100%;
+        top: 60px;
+        right: 0px;
+        z-index: 1000;
+        transition: .6s;
+        background-color: var(--bg-color-header);
+        height: 0;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    .activeMobileNav .menu {
+        height: calc(100vh - 60px);
+        visibility: visible;
+        /* overflow-y: auto; */
+
+    }
+
+    .activeMobileNav .btn-mobile {
+        border-top-color: transparent;
+    }
+
+    .activeMobileNav .btn-mobile::before {
+        transform: rotate(135deg);
+    }
+
+    .activeMobileNav .btn-mobile::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+
+
 }
 
 /* HEADER */

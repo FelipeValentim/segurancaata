@@ -23,6 +23,7 @@ body {
     margin: 0;
     font-family: 'Zen Kurenaido', sans-serif;
     background-color: #fdfdfd;
+    /* background-color: #333333; */
 }
 
 ul,
@@ -77,11 +78,11 @@ li {
 
 .js .js-menu.js-menu-ativo {
     display: block;
-    animation: showMain 0.5s;
+    /* animation: showMain 0.5s; */
 
 }
 
-.menu .ativo {
+.menu .activeTab {
     color: var(--primary-color);
 }
 
@@ -89,7 +90,7 @@ li {
     color: var(--primary-color);
 }
 
-@keyframes showMain {
+/* @keyframes showMain {
     from {
         opacity: 0;
         transform: translate3d(0, 50px, 0);
@@ -99,11 +100,11 @@ li {
         opacity: 1;
         transform: translate3d(0, 0, 0);
     }
-}
+} */
 
 /* MENU-HEADER */
 
-/* @keyframes showLeft {
+@keyframes showLeft {
     from {
         opacity: 0;
         transform: translate3d(-100px, 0, 0);
@@ -125,4 +126,4 @@ li {
         opacity: 1;
         transform: translate3d(0, 0, 0);
     }
-} */
+}

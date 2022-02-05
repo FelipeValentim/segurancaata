@@ -20,11 +20,9 @@
 
 <body>
     <header class="header">
-        <nav class="menu">
-            <ul>
-                <!-- <li><a href="#main-home">home</a></li>
-                <li><a href="#main-service">serviços</a></li>
-                <li><a href="#">contato</a></li> -->
+        <nav class="nav">
+            <button aria-label="Abrir menu" class="button" aria-haspopup="true" aria-controls="menu" aria-expanded="false"><span class="btn-mobile"></span></button>
+            <ul class="menu" id="menu" role="menu">
                 <li><a href="#main-home">home</a></li>
                 <li><a href="#main-service">serviços</a></li>
                 <li><a href="#main-contact">contato</a></li>
@@ -122,18 +120,21 @@
                 Mas tão importante quanto tudo isso, é a nossa visão de que “nenhum homem é uma ilha”, de que pouco adianta nos trancarmos em fortalezas cada vez mais intransponíveis, se não zelarmos pela estabilidade e melhoria das condições sociais do nosso entorno.</p>
         </section>
         <section class="formulario-bg">
-            <div class="formulario js-scroll">
-                <div>
+            <div class="formulario-main js-scroll">
+                <div class="form-info">
                     <h2>ENVIE UMA MENSAGEM</h2>
                     <p>Contate um dos nossos consultores e descubra o que existe de melhor quando se fala em segurança.</p>
                     <p>Estamos sempre prontos para te atender. Nossa prioridade é sua segurança!</p>
                 </div>
-                <div>
+                <div class="formulario">
                     <form action="post">
-                        <input type="text">
-                        <input type="email">
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
-                        <button type="submit">Enviar</button>
+                        <input type="text" placeholder="Nome *">
+                        <input type="email" placeholder="E-mail *">
+                        <textarea name="" id="" cols="30" rows="5" placeholder="Digite sua mensagem aqui *"></textarea>
+                        <div class="button">
+                            <button type="submit">Enviar</button>
+                        </div>
+
                     </form>
                 </div>
 
