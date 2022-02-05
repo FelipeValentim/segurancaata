@@ -67,7 +67,7 @@ function showTabInit() {
 
     }
 
-    document.querySelector("#main-contact").classList.add('js-menu-ativo');
+    document.querySelector("#main-home").classList.add('js-menu-ativo');
     document.querySelector("a[href='#main-home']").classList.add('activeTab');
 
 
