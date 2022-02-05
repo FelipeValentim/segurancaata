@@ -5,7 +5,7 @@
 
 }
 
-.button {
+.nav .button {
     display: none;
 }
 
@@ -65,7 +65,7 @@
         height: 60px;
     }
 
-    .button {
+    .nav .button {
         display: block;
         /* text-align: end; */
         padding: 20px;
@@ -73,7 +73,7 @@
         background: none;
     }
 
-    .btn-mobile {
+    .nav .btn-mobile {
         /* padding: 10px; */
         display: block;
         border-top: 2px solid;
