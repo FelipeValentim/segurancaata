@@ -119,7 +119,7 @@
     border: none;
     padding: 15px 80px;
     font-size: 1.2rem;
-    background: #eab333;
+    background: var(--bg-color-footer);
     border-radius: 2rem;
 }
 
