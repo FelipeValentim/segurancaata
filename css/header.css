@@ -43,6 +43,26 @@
 }
 
 @media (max-width: 600px) {
+    .header {
+        position: fixed;
+        top: 0;
+        margin: 5px;
+        z-index: 1000;
+    }
+
+    .menu {
+        display: block;
+        position: absolute;
+        padding: 0px;
+        /* top: 76px; */
+        z-index: 1000;
+        transition: .6s;
+        background-color: var(--bg-color-header);
+        max-height: 0;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
     .menu li {
         text-align: start;
     }
@@ -62,11 +82,9 @@
 
     .nav .button {
         display: block;
-        /* text-align: end; */
-        padding: 30px;
+        padding: 20px;
         border: none;
         background: none;
-        /* background-color: tomato; */
         cursor: pointer;
     }
 
@@ -92,29 +110,9 @@
         position: relative;
     }
 
-    .menu {
-        display: block;
-        position: absolute;
-        padding: 0px;
-        /* width: 100%; */
-        top: 76px;
-        /* right: 0px; */
-        z-index: 1000;
-        transition: .6s;
-        background-color: var(--bg-color-header);
-        /* height: 0; */
-        max-height: 0;
-        visibility: hidden;
-        overflow-y: hidden;
-    }
-
     .activeMobileNav .menu {
-        /* height: calc(100vh - 60px); */
         max-height: 250px;
-
         visibility: visible;
-        /* overflow-y: auto; */
-
     }
 
     .activeMobileNav .btn-mobile {
