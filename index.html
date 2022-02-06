@@ -127,14 +127,18 @@
                     <p>Estamos sempre prontos para te atender. Nossa prioridade é sua segurança!</p>
                 </div>
                 <div class="formulario">
-                    <form action="post">
-                        <input type="text" placeholder="Nome *">
-                        <input type="email" placeholder="E-mail *">
-                        <textarea name="" id="" cols="30" rows="5" placeholder="Digite sua mensagem aqui *"></textarea>
+                    <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+
+                    <form action="https://api.staticforms.xyz/submit" method="POST" target="dummyframe">
+                        <input type="hidden" name="accessKey" value="e9ff7bb3-6d45-43a9-a18d-2aae7ea07a0d">
+                        <input type="text" name="name" placeholder="Nome *" required>
+                        <input type="email" name="email" placeholder="E-mail *" required>
+                        <textarea name="message" cols="30" rows="5" placeholder="Digite sua mensagem aqui *" required></textarea>
                         <div class="button">
                             <button type="submit">Enviar</button>
                         </div>
-
+                        <input type="hidden" name="redirectTo" value="https://felipevalentim.github.io/"> <!-- Optional -->
+                        <p class="mensagemForm">Mensagem enviada com sucesso</p>
                     </form>
                 </div>
 

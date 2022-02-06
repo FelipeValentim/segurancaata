@@ -111,11 +111,30 @@
 }
 
 .formulario button {
+    cursor: pointer;
+
+}
+
+.formulario button {
     border: none;
     padding: 15px 80px;
     font-size: 1.2rem;
     background: #eab333;
     border-radius: 2rem;
+}
+
+.mensagemForm {
+    display: none;
+    margin-top: 10px;
+    text-align: end;
+    padding: 20px;
+    color: #88FF88;
+    font-size: 1.5rem;
+    border-radius: 6px;
+}
+
+.mensagemEnviada {
+    display: block;
 }
 
 
