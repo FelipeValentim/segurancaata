@@ -77,7 +77,7 @@ function showTabInit() {
 showTabInit();
 
 function menuHamburguerInit() {
-    const btnMobile = document.querySelector('.btn-mobile');
+    const btnMobile = document.querySelector('.button');
     const hamburguerButton = document.querySelectorAll(".menu a[href^='#']");
     const nav = document.querySelector('.nav');
 

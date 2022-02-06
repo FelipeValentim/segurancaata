@@ -67,6 +67,7 @@
         border: none;
         background: none;
         /* background-color: tomato; */
+        cursor: pointer;
     }
 
     .nav .btn-mobile {
@@ -74,7 +75,6 @@
         display: block;
         border-top: 2px solid;
         width: 20px;
-        cursor: pointer;
         color: var(--primary-color);
     }
 
