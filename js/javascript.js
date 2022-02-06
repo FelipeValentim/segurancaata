@@ -13,7 +13,7 @@ function scrollAnimInit() {
                 }
             });
         }
-        scrollAnim()
+        scrollAnim();
         window.addEventListener('scroll', scrollAnim);
     }
 
@@ -25,7 +25,6 @@ function scrollAnimInit() {
         }
     };
 }
-
 scrollAnimInit();
 
 function showTabInit() {
@@ -142,7 +141,6 @@ function enviarEmail() {
     } else {
         index = 0;
     }
-
 }
 
 submit.addEventListener('click', enviarEmail);
