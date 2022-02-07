@@ -30,6 +30,13 @@ scrollAnimInit();
 function showTabInit() {
     const headerButton = document.querySelectorAll(".menu a[href^='#']");
     const mains = document.querySelectorAll('.js-menu');
+    // const home = document.querySelector('.menu a[href^="#main-home"]');
+    // const service = document.querySelector('.menu a[href^="#main-service"]');
+
+
+    // if (window.matchMedia('(max-width: 600px)').matches) {
+
+    // }
 
     function changeMain(event) {
         event.preventDefault();
@@ -48,7 +55,7 @@ function showTabInit() {
             main.classList.remove('js-menu-ativo');
         });
 
-        if (window.innerWidth > 600) {
+        if (!window.matchMedia('(max-width: 600px)').matches) {
             if (ativo < antigo) { // Checa se o botão clicado está a direita ou a esquerda do ativo
                 main.classList.add('js-menu-ativo');
                 main.style.animation = 'showLeft 0.5s'; // Adiciona a animação para a esquerda

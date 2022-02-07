@@ -70,8 +70,7 @@
     .menu li a {
         font-size: 1.2rem;
         display: block;
-        padding: 20px 10px;
-        margin: 0 15px;
+        padding: 20px;
         border-top: 2px solid rgba(0, 0, 0, 0.1);
 
     }
