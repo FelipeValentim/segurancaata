@@ -83,6 +83,13 @@
     }
 }
 
+@media (max-width: 600px) {
+    .main-service .titulo-main {
+        margin-top: 20px;
+
+    }
+}
+
 
 
 
